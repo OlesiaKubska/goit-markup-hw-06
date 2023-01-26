@@ -498,6 +498,23 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-input {
+  margin-left: 120px;
+}
+
+.footer-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  background: var(--accent-text-color);
+  border-radius: 4px;
+  color: var(--title-text-color);
+}
+
+
 .filters {
   padding-top: 96px;
 }
