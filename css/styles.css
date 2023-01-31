@@ -367,6 +367,7 @@ body {
 }
 
 .modal-form-message:focus {
+  outline: none;
   border: 1px solid var(--accent-text-color);
 }
 
@@ -420,9 +421,8 @@ body {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
-  margin-top: 24px;
-  min-width: 169px;
   align-self: center;
+  min-width: 169px;
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -613,11 +613,11 @@ body {
   max-width: 264px;
 }
 
-.social {
+.footer-social {
   margin-left: 120px;
 }
 
-.strong {
+.footer-strong {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -625,25 +625,25 @@ body {
   color: var(--title-text-color);
 }
 
-.social-list {
+.footer-social-list {
   margin-top: 16px;
 }
 
-.social-item {
+.footer-social-item {
   width: 40px;
   height: 40px;
 }
 
-.social-item:not(:last-child) {
+.footer-social-item:not(:last-child) {
   margin-right: 16px;
 }
 
-.social-link:hover,
-.social-link:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 
-.social-link {
+.footer-social-link {
   width: 100%;
   height: 100%;
   background-color: var(--primary-text-color);
@@ -660,16 +660,59 @@ body {
   margin-left: 120px;
 }
 
-.footer-btn {
+.footer-form {
+  display: flex;
+  margin-top: 16px;
+}
+
+.footer-form-input {
+  display: block;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  background: var(--toptitle-text-color);
+  color: rgba(255, 255, 255, 0.6);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-form-input:focus {
+  outline: none;
+}
+
+.footer-form-submit {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   padding: 8px 24px;
+  letter-spacing: 0.04em;
   gap: 16px;
   background: var(--accent-text-color);
   border-radius: 4px;
   color: var(--title-text-color);
+  margin-left: 24px;
+  border: none;
+  cursor: pointer;
+  width: 165px;
+  height: 40px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-submit:hover,
+.footer-form-submit:focus {
+  background-color: #404bbf;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .filters {
